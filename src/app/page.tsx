@@ -11,7 +11,6 @@ export default function Home() {
       <Content/>
       </div>
       <HeroSection/>
-      <NavigationBar/>
     </main>
   );
 }
