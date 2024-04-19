@@ -6,6 +6,7 @@ import "../heroSection/styles.css"
 import { HiOutlineMail } from "react-icons/hi";
 
 export default function heroSection() {
+    const [phone,setPhone]=useState()
     const notify = () => {
         if (!phone){
             return
@@ -38,7 +39,7 @@ export default function heroSection() {
         }
         };
 
-    const [phone,setPhone]=useState()
+    
   return (
     <div className=" bg-[#394649] text-white flex flex-col items-center ">
       <div className=" text-center w-[728px] py-32 ">
@@ -53,6 +54,7 @@ export default function heroSection() {
           <HiOutlineMail className=" relative left-8 text-[#7F8C89]" />
           <input
           onChange={e=>setPhone(e.target.value)}
+          onWheel={(e) => e.target.blur()}
             type="number"
             placeholder="Мобилен телефон"
             className=" h-20 rounded-xl w-80 text-center place-self-center text-black outline-none"
@@ -60,7 +62,8 @@ export default function heroSection() {
           />
           <button
             onClick={notify}
-            className=" h-20 border-2 rounded-xl w-30 bg-[#E7F874] text-[#083C2F] text-center p-6 relative right-4 border-transparent rounded-tl-none rounded-bl-none">
+            
+            className=" font-bold h-20 border-2 rounded-xl w-30 bg-[#E7F874] text-[#083C2F] text-center p-6 relative right-4 border-transparent rounded-tl-none rounded-bl-none">
             Изпрати
           </button>
           <ToastContainer className="text-xl font-bold text-[#083C2F]"/>
