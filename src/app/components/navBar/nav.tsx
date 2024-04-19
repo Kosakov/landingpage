@@ -4,12 +4,11 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-grotesk",
 });
-
 export default function navBar() {
   return (
     <div className=" flex flex-nowrap justify-around  my-7  text-[#01303A] items-center">
       <div className={spaceGrotesk.className}>
-        <p className="font-extrabold text-4xl ">
+        <p className="font-extrabold text-4xl font-SpaceGrotesk">
           Website
         </p>
       </div>
