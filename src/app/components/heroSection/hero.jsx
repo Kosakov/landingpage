@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "../heroSection/styles.css"
 import { HiOutlineMail } from "react-icons/hi";
 
-export default function heroSection() {
+export default function HeroSection() {
     const [phone,setPhone]=useState()
     const notify = () => {
         if (!phone || !phone.match(/^08\d{8}$/)){
