@@ -7,7 +7,7 @@ export default function Heading() {
         <h1>Гъвкави решения за сухoпътeн транспорт за всеки клиент</h1>
       </div>
       <div>
-      <img src="/pic.png" alt="truck" srcset="" />
+      <img src="/pic.png" alt="truck" />
       </div>
     </div>
   );
