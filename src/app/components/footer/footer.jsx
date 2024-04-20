@@ -1,9 +1,11 @@
 import Image from "next/image";
 
+import "../footer/style.css"
+
 
 export default function Footer() {
   return (
-    <footer className=" my-24 flex justify-center">
+    <footer className=" my-24 flex justify-center ">
       <div className=" max-w-7xl flex  flex-col gap-16">
       <div className=" text-left text-5xl font-bold text-[#01303A]">
         
@@ -12,25 +14,15 @@ export default function Footer() {
       </div>
       <div className=" flex justify-center gap-10 text-[#01303A] font-bold text-2xl font-grotesk">
         <div className="flex  flex-col gap-9">
-          <Image src="/ADR.png" width={416} height={300} alt="ADR" />
+        <img src="/ADR.png" alt="" />
           <p>Опасни товари (ADR)</p>
         </div>
         <div className="flex  flex-col gap-9">
-          <Image
-            src="/freezer.png"
-            width={416}
-            height={300}
-            alt="Хладилен транспорт"
-          />
+          <img src="/freezer.png" alt="" />
           <p>Хладилен транспорт</p>
         </div>
         <div className="flex  flex-col gap-9">
-          <Image
-            src="/Containers.png"
-            width={416}
-            height={300}
-            alt="Извънгабаритни товари"
-          />
+        <img src="/Containers.png" alt="" />
           <p>Извънгабаритни товари</p>
         </div>
       </div>

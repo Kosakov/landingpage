@@ -1,8 +1,8 @@
 export default function navBar() {
   return (
-    <nav className="flex items-center justify-around p-4 text-[#01303A]">
-    <div className=" font-grotesk font-extrabold text-4xl" >Website</div>
-    <div className="flex items-center space-x-4 font-semibold">
+    <nav className="flex items-center justify-around p-8 pb-10 text-[#01303A] max-lg:flex-col max-lg:justify-center">
+    <div className=" font-grotesk font-extrabold text-3xl " >Website</div>
+    <div className="flex items-center space-x-4 font-semibold max-lg:flex-col max-lg:space-x-0 max-lg:text-2xl">
       <p>
         <a href="#" className=" hover:underline">Начало</a>
       </p>
@@ -22,10 +22,12 @@ export default function navBar() {
         <a href="#" className="hover:underline">Контакти</a>
       </p >
     </div>
-    <div className="flex items-center space-x-4 font-semibold">
+    <div className="flex items-center space-x-4 font-semibold max-lg:flex-col max-lg:text-2xl">
       <button className="hover:underline">Профил</button>
-      <button className="border-gray-800 border-2 rounded-lg py-4 px-4 hover:bg-[#01303A] hover:text-white">Заявка за пратка</button>
+      <button className="border-gray-800 border-2 rounded-lg py-2 px-4 hover:bg-[#01303A] hover:text-white">Заявка за пратка</button>
     </div>
   </nav>
+
+  
   );
 }

@@ -1,9 +1,9 @@
 
 export default function content(){
     return(
-        <div className=" w-[780px] mt-24 flex flex-col justify-between gap-16 leading-7 text-xl mb-28" >
+        <div className=" max-w-[780px] mt-24 flex flex-col justify-between gap-16 leading-7 text-xl mb-28 " >
         <div className=" flex flex-col justify-between  gap-10 ">
-            <h1 className=" text-5xl font-bold text-[#01303A] font-grotesk">Решения</h1>
+            <h1 className=" text-5xl font-extrabold text-[#01303A] font-grotesk tracking-tight">Решения</h1>
             <p>Фокусът ни върху клиентите е същността на нашата работа. Ние доставяме услуги за всички видове бизнес – от малки местни предприятия до мултинационални компании.</p>
             <div>
                 <p>Ние обработваме вашата пратка като всяка друга голяма товарна пратка – старателно и професионално.</p>
@@ -19,7 +19,7 @@ export default function content(){
             </div>
         </div>
         <div className=" flex flex-col justify-between gap-10 ">
-            <h1 className=" text-5xl font-bold text-[#01303A] font-grotesk">Предимства</h1>
+            <h1 className=" text-5xl font-extrabold text-[#01303A] font-grotesk tracking-tight">Предимства</h1>
             <p>Фокусът ни върху клиентите е същността на нашата работа. Ние доставяме услуги за всички видове бизнес – от малки местни предприятия до мултинационални компании.</p>
             <p>Ние обработваме вашата пратка като всяка друга голяма товарна пратка – старателно и професионално.</p>
         </div>

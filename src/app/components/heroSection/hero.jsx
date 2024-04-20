@@ -37,12 +37,12 @@ export default function HeroSection() {
 
     
   return (
-    <div className=" bg-[#394649] text-white flex flex-col items-center ">
-      <div className=" text-center w-[728px] py-32 ">
-        <h1 className=" text-7xl font-bold pb-8 font-grotesk">
+    <div className=" bg-[#394649] text-white flex flex-col items-center">
+      <div className=" text-center max-w-[728px] py-32 ">
+        <h1 className=" text-7xl font-bold pb-8 font-grotesk max-lg:text-4xl">
           Готови ли сте да работим заедно?
         </h1>
-        <p className=" text-xl w-[55ch] pl-16 pb-11">
+        <p className=" text-xl max-w-[55ch] pl-16 pb-11 max-lg:text-l max-lg:text-center">
           Оставете вашият телефон и ние ще се свържем с вас, за да отговорим на
           всички въпроси
         </p>

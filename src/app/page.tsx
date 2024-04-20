@@ -5,14 +5,20 @@ import HeroSection from "./components/heroSection/hero"
 import Footer from "./components/footer/footer"
 export default function Home() {
   return (
-    <main>
+    <main className=" flex flex-col items-center self-stretch ">
+      <div className=" self-stretch">
       <NavigationBar/>
-      <div className=" flex flex-col items-center">
+      </div>
+      <div className=" lg:mx-40 lg:max-w-50%  max-lg:mx-4">
       <Heading/>
       <Content/>
       </div>
+      <div className=" self-stretch">
       <HeroSection/>
+      </div>
+      <div className=" lg:mx-40 lg:w-auto">
       <Footer/>
+      </div>
     </main>
   );
 }
