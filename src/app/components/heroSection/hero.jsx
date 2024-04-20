@@ -11,7 +11,7 @@ export default function HeroSection() {
         if (!phone || !phone.match(/^08\d{8}$/)){
           toast.warn('Моля въведе телефонен номер във формат 08********', {
             position: "top-right",
-            autoClose: 5000,
+            autoClose: 3000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: true,
@@ -50,11 +50,11 @@ export default function HeroSection() {
           <HiOutlineMail className=" relative left-8 text-[#7F8C89]" />
           <input
           onChange={e=>setPhone(e.target.value)}
-          onWheel={(e) => e.target.blur()}
-            type="number"
+            type="text"
+            maxLength="10"
             placeholder="Мобилен телефон"
-            className=" min-h-20 rounded-xl max-w-80 text-center place-self-center text-black outline-none"
-            max="10"
+            className=" min-h-20 rounded-xl min-w-80  text-center place-self-center text-black outline-none max-sm:min-w-60"
+            inputmode="numeric"
           />
           <button
             onClick={notify}
