@@ -38,11 +38,11 @@ export default function HeroSection() {
     
   return (
     <div className=" bg-[#394649] text-white flex flex-col items-center">
-      <div className=" text-center max-w-[728px] py-32 ">
+      <div className=" text-center max-w-[728px] py-32 max-sm:py-20">
         <h1 className=" text-7xl font-bold pb-8 font-grotesk max-lg:text-4xl">
           Готови ли сте да работим заедно?
         </h1>
-        <p className=" text-xl max-w-[55ch] pl-16 pb-11 max-lg:text-l max-lg:text-center">
+        <p className=" text-xl max-w-[55ch] pl-16 pb-11  max-lg:text-l max-lg:text-center max-sm:pl-0">
           Оставете вашият телефон и ние ще се свържем с вас, за да отговорим на
           всички въпроси
         </p>
@@ -53,13 +53,13 @@ export default function HeroSection() {
           onWheel={(e) => e.target.blur()}
             type="number"
             placeholder="Мобилен телефон"
-            className=" h-20 rounded-xl w-80 text-center place-self-center text-black outline-none"
+            className=" min-h-20 rounded-xl max-w-80 text-center place-self-center text-black outline-none"
             max="10"
           />
           <button
             onClick={notify}
             
-            className="hover:bg-[#d6f30f] font-bold h-20 border-2 rounded-xl w-30 bg-[#E7F874] text-[#083C2F] text-center p-6 relative right-4 border-transparent rounded-tl-none rounded-bl-none">
+            className="hover:bg-[#d6f30f] font-bold h-20 border-2 rounded-xl w-30 bg-[#E7F874] text-[#083C2F] text-center p-2 relative right-4 border-transparent rounded-tl-none rounded-bl-none">
             Изпрати
           </button>
           <ToastContainer className="text-xl font-bold text-[#083C2F]" limit={1}/>

@@ -5,7 +5,7 @@ import HeroSection from "./components/heroSection/hero"
 import Footer from "./components/footer/footer"
 export default function Home() {
   return (
-    <main className=" flex flex-col items-center self-stretch ">
+    <main className=" flex flex-col items-center self-stretch max-sm:p-0">
       <div className=" self-stretch">
       <NavigationBar/>
       </div>
