@@ -1,30 +1,26 @@
-
-import a from 'next/a';
-
-
 export default function navBar() {
   return (
     <nav className="flex items-center justify-around p-4 text-[#01303A]">
     <div className=" font-grotesk font-extrabold text-4xl" >Website</div>
     <div className="flex items-center space-x-4 font-semibold">
-      <a href="#">
-        <a className=" hover:underline">Начало</a>
-      </a>
-      <a href="#">
-        <a className="hover:underline">За нас</a>
-      </a>
-      <a href="#">
-        <a className="hover:underline">Услуги</a>
-      </a>
-      <a href="#" >
-        <a className="hover:underline">Цени</a>
-      </a>
-      <a href="#" >
-        <a className="hover:underline">Как работи</a>
-      </a >
-      <a href="#" >
-        <a className="hover:underline">Контакти</a>
-      </a >
+      <p>
+        <a href="#" className=" hover:underline">Начало</a>
+      </p>
+      <p>
+        <a href="#" className="hover:underline">За нас</a>
+      </p>
+      <p>
+        <a href="#" className="hover:underline">Услуги</a>
+      </p>
+      <p >
+        <a href="#" className="hover:underline">Цени</a>
+      </p>
+      <p >
+        <a href="#" className="hover:underline">Как работи</a>
+      </p >
+      <p >
+        <a href="#" className="hover:underline">Контакти</a>
+      </p >
     </div>
     <div className="flex items-center space-x-4 font-semibold">
       <button className="hover:underline">Профил</button>
