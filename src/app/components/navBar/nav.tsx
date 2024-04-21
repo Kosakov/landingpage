@@ -1,6 +1,6 @@
 export default function navBar() {
   return (
-    <nav className="flex items-center justify-around p-8 pb-10 text-[#01303A] max-lg:flex-col max-lg:justify-center max-sm:pt-3">
+    <nav className=" bg-white flex items-center justify-around p-2 pb-3 text-[#01303A] max-lg:flex-col max-lg:justify-center max-sm:pt-3 w-[100%] fixed">
     <div className=" font-grotesk font-extrabold text-3xl max-sm:text-5xl max-sm:pb-4" >Website</div>
     <div className="flex items-center space-x-4 font-semibold max-lg:flex-col max-lg:space-x-0 max-lg:text-2xl">
       <p>
